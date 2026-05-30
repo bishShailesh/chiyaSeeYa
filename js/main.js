@@ -7,9 +7,9 @@ let currentCategory = 'all';
 document.addEventListener('DOMContentLoaded', function() {
     // Check if we're on the menu page
     const menuContainer = document.getElementById('menu-container');
-    const filterButtons = document.getElementById('filter-buttons');
+    const categoryFilter = document.getElementById('category-filter');
     
-    if (menuContainer && filterButtons) {
+    if (menuContainer && categoryFilter) {
         // We're on the menu page - load menu with filtering
         loadMenuWithFilter();
     }
@@ -58,48 +58,46 @@ function loadMenuWithFilter() {
         });
 }
 
-// Create filter buttons dynamically
+// Create filter dropdown options dynamically
 function createFilterButtons(data) {
-    const filterContainer = document.getElementById('filter-buttons');
+    const filterContainer = document.getElementById('category-filter');
     
-    // Keep the "All" button, just remove category buttons
-    const existingCategoryButtons = filterContainer.querySelectorAll('.filter-btn[data-category]:not([data-category="all"])');
-    existingCategoryButtons.forEach(btn => btn.remove());
+    // Keep the "All" option, remove other options
+    const existingOptions = filterContainer.querySelectorAll('option:not([value="all"])');
+    existingOptions.forEach(opt => opt.remove());
     
-    // Create buttons for each category
+    // Create options for each category
     if (data.categories && data.categories.length > 0) {
         data.categories.forEach((category, index) => {
-            const button = document.createElement('button');
-            button.className = 'filter-btn';
-            button.setAttribute('data-category', category.name.toLowerCase().replace(/\s+/g, '-'));
-            
-            // Add icon based on category
-            const icon = category.icon || 'fas fa-utensils';
-            
-            button.innerHTML = `<i class="${icon} me-1"></i> ${category.name}`;
+            const option = document.createElement('option');
+            const categorySlug = category.name.toLowerCase().replace(/\s+/g, '-');
+            option.value = categorySlug;
+            option.textContent = category.name;
             
             // Add click event
-            button.addEventListener('click', function() {
-                filterMenu(category.name.toLowerCase().replace(/\s+/g, '-'));
+            option.addEventListener('change', function() {
+                filterMenu(categorySlug);
             });
             
-            filterContainer.appendChild(button);
+            filterContainer.appendChild(option);
         });
     }
+    
+    // Add change event listener to the dropdown
+    filterContainer.addEventListener('change', function() {
+        filterMenu(this.value);
+    });
 }
 
 // Filter menu by category
 function filterMenu(category) {
     currentCategory = category;
     
-    // Update active button
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-category') === category) {
-            btn.classList.add('active');
-        }
-    });
+    // Update dropdown selection
+    const filterDropdown = document.getElementById('category-filter');
+    if (filterDropdown) {
+        filterDropdown.value = category;
+    }
     
     // Re-render menu with filter
     renderMenu(menuData, category);

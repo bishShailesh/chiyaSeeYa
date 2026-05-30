@@ -53,13 +53,11 @@
     <!-- Category Filter -->
     <div class="category-filter">
         <div class="filter-container">
-            <p class="filter-title"><i class="fas fa-filter me-2"></i>Filter by Category</p>
-            <div class="filter-buttons" id="filter-buttons">
-                <button class="filter-btn active" data-category="all" onclick="filterMenu('all')">
-                    <i class="fas fa-th me-1"></i> All
-                </button>
-                <!-- Category buttons will be added dynamically -->
-            </div>
+            <label for="category-filter" class="filter-title"><i class="fas fa-filter me-2"></i>Filter by Category</label>
+            <select class="form-select category-dropdown" id="category-filter" aria-label="Filter by category">
+                <option value="all">All Items</option>
+                <!-- Category options will be added dynamically -->
+            </select>
         </div>
     </div>
 
