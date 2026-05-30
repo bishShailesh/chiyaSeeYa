@@ -1,0 +1,393 @@
+{
+  "categories": [
+    {
+      "name": "Milk Tea",
+      "icon": "fas fa-mug-hot",
+      "items": [
+        {
+          "name": "Regular Tea",
+          "description": "Traditional Nepali milk tea brewed with premium tea leaves and fresh milk.",
+          "price": "Rs 40/-"
+        },
+        {
+          "name": "Masala Tea",
+          "description": "Classic milk tea infused with aromatic Nepali spices for a rich flavor.",
+          "price": "Rs 50/-"
+        },
+        {
+          "name": "Special Tea",
+          "description": "Our signature tea blend with milk, cardamom, cinnamon, ginger, and special spices.",
+          "price": "Rs 60/-"
+        }
+      ]
+    },
+    {
+      "name": "Black Tea",
+      "icon": "fas fa-mug-hot",
+      "items": [
+        {
+          "name": "Black Tea",
+          "description": "Freshly brewed black tea with a bold and refreshing taste.",
+          "price": "Rs 35/-"
+        },
+        {
+          "name": "Lemon Tea",
+          "description": "Black tea infused with fresh lemon for a light citrus flavor.",
+          "price": "Rs 35/-"
+        },
+        {
+          "name": "Hot Lemon",
+          "description": "Warm lemon drink prepared with freshly squeezed lemon and hot water.",
+          "price": "Rs 45/-"
+        },
+        {
+          "name": "Hot Lemon Honey",
+          "description": "Soothing hot lemon drink sweetened with natural honey.",
+          "price": "Rs 90/-"
+        }
+      ]
+    },
+    {
+      "name": "Herbal Tea",
+      "icon": "fas fa-leaf",
+      "items": [
+        {
+          "name": "Chamomile Tea",
+          "description": "Naturally calming herbal tea with delicate floral notes.",
+          "price": "Rs 95/-"
+        },
+        {
+          "name": "Hot Lemon Honey Tea",
+          "description": "Refreshing herbal tea blended with lemon and pure honey.",
+          "price": "Rs 95/-"
+        },
+        {
+          "name": "Green Tea",
+          "description": "Light and healthy green tea rich in natural antioxidants.",
+          "price": "Rs 95/-"
+        },
+        {
+          "name": "Hibiscus Tea",
+          "description": "Tangy herbal tea made from hibiscus flowers with a vibrant flavor.",
+          "price": "Rs 95/-"
+        }
+      ]
+    },
+    {
+      "name": "Chill Tea",
+      "icon": "fas fa-glass-water",
+      "items": [
+        {
+          "name": "Peach Iced Tea",
+          "description": "Refreshing iced tea infused with sweet peach flavor.",
+          "price": "Rs 180/-"
+        },
+        {
+          "name": "Lemon Iced Tea",
+          "description": "Chilled black tea with a refreshing citrus twist.",
+          "price": "Rs 180/-"
+        },
+        {
+          "name": "Apple Iced Tea",
+          "description": "Cool and fruity iced tea flavored with fresh apple notes.",
+          "price": "Rs 180/-"
+        },
+        {
+          "name": "Pineapple Iced Tea",
+          "description": "Tropical iced tea blended with juicy pineapple flavor.",
+          "price": "Rs 230/-"
+        }
+      ]
+    },
+    {
+      "name": "Fizzy Drinks",
+      "icon": "fas fa-bottle-water",
+      "items": [
+        {
+          "name": "Coke",
+          "description": "Chilled Coca-Cola served ice cold.",
+          "price": "Rs 90/-"
+        },
+        {
+          "name": "Fanta",
+          "description": "Refreshing orange-flavored carbonated soft drink.",
+          "price": "Rs 90/-"
+        },
+        {
+          "name": "Sprite",
+          "description": "Crisp lemon-lime flavored soft drink.",
+          "price": "Rs 90/-"
+        },
+        {
+          "name": "Masala Sprite",
+          "description": "Sprite enhanced with Nepali spices and fresh lemon.",
+          "price": "Rs 130/-"
+        },
+        {
+          "name": "Masala Coke",
+          "description": "Coca-Cola mixed with a spicy and tangy masala twist.",
+          "price": "Rs 130/-"
+        }
+      ]
+    },
+    {
+      "name": "Lassi",
+      "icon": "fas fa-glass-water-droplet",
+      "items": [
+        {
+          "name": "Plain Lassi",
+          "description": "Traditional yogurt-based drink, smooth and refreshing.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Sweet Lassi",
+          "description": "Creamy yogurt drink lightly sweetened for a classic taste.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Banana Lassi",
+          "description": "Rich yogurt smoothie blended with fresh banana.",
+          "price": "Rs 180/-"
+        }
+      ]
+    },
+    {
+      "name": "Shakes",
+      "icon": "fas fa-blender",
+      "items": [
+        {
+          "name": "Chocolate Shake",
+          "description": "Creamy milkshake blended with rich chocolate flavor.",
+          "price": "Rs 200/-"
+        },
+        {
+          "name": "Vanilla Shake",
+          "description": "Smooth and refreshing vanilla-flavored milkshake.",
+          "price": "Rs 200/-"
+        },
+        {
+          "name": "Strawberry Shake",
+          "description": "Fresh strawberry milkshake with a fruity sweetness.",
+          "price": "Rs 220/-"
+        },
+        {
+          "name": "Oreo Shake",
+          "description": "Creamy shake blended with crushed Oreo cookies.",
+          "price": "Rs 250/-"
+        }
+      ]
+    },
+    {
+      "name": "Mocktails",
+      "icon": "fas fa-martini-glass-citrus",
+      "items": [
+        {
+          "name": "Virgin Mojito",
+          "description": "Refreshing blend of mint, lime, and soda.",
+          "price": "Rs 220/-"
+        },
+        {
+          "name": "Lemonade",
+          "description": "Fresh lemon drink served chilled and refreshing.",
+          "price": "Rs 160/-"
+        },
+        {
+          "name": "Mint Lemonade",
+          "description": "Classic lemonade enhanced with fresh mint leaves.",
+          "price": "Rs 180/-"
+        },
+        {
+          "name": "Blue Lagoon",
+          "description": "Refreshing blue citrus mocktail with a tropical flavor.",
+          "price": "Rs 220/-"
+        },
+        {
+          "name": "Fruit Punch",
+          "description": "A vibrant blend of mixed fruit juices served chilled.",
+          "price": "Rs 250/-"
+        },
+        {
+          "name": "Peach Sunrise",
+          "description": "Sweet peach mocktail layered with refreshing citrus flavors.",
+          "price": "Rs 250/-"
+        }
+      ]
+    },
+    {
+      "name": "Momo",
+      "icon": "fas fa-dumpling",
+      "items": [
+        {
+          "name": "Chicken Steam Momo",
+          "description": "Steamed dumplings filled with seasoned chicken and spices.",
+          "price": "Rs 170/-"
+        },
+        {
+          "name": "Chicken Fry Momo",
+          "description": "Crispy fried chicken momos served golden brown.",
+          "price": "Rs 180/-"
+        },
+        {
+          "name": "Chicken Chilly Momo",
+          "description": "Fried chicken momos tossed in a spicy chili sauce.",
+          "price": "Rs 195/-"
+        },
+        {
+          "name": "Buff Steam Momo",
+          "description": "Traditional steamed momos filled with flavorful buffalo meat.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Buff Fry Momo",
+          "description": "Crispy fried buffalo momos with a crunchy exterior.",
+          "price": "Rs 165/-"
+        },
+        {
+          "name": "Buff Chilly Momo",
+          "description": "Buff momos stir-fried with spicy chili and vegetables.",
+          "price": "Rs 185/-"
+        },
+        {
+          "name": "Veg Steam Momo",
+          "description": "Steamed dumplings filled with fresh mixed vegetables.",
+          "price": "Rs 140/-"
+        },
+        {
+          "name": "Veg Fry Momo",
+          "description": "Golden fried vegetable momos with a crispy texture.",
+          "price": "Rs 160/-"
+        },
+        {
+          "name": "Veg Chilly Momo",
+          "description": "Vegetable momos tossed in a spicy and tangy chili sauce.",
+          "price": "Rs 180/-"
+        }
+      ]
+    },
+    {
+      "name": "Chowmin",
+      "icon": "fas fa-bowl-food",
+      "items": [
+        {
+          "name": "Veg",
+          "description": "Stir-fried noodles with fresh vegetables and house seasoning.",
+          "price": "Rs 130/-"
+        },
+        {
+          "name": "Chicken",
+          "description": "Stir-fried noodles with tender chicken and vegetables.",
+          "price": "Rs 160/-"
+        },
+        {
+          "name": "Buff",
+          "description": "Flavorful noodles cooked with seasoned buffalo meat.",
+          "price": "Rs 160/-"
+        },
+        {
+          "name": "Egg",
+          "description": "Stir-fried noodles tossed with egg and vegetables.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Mix",
+          "description": "Loaded chowmein with chicken, buff, egg, and vegetables.",
+          "price": "Rs 220/-"
+        }
+      ]
+    },
+    {
+      "name": "Veg Snacks",
+      "icon": "fas fa-carrot",
+      "items": [
+        {
+          "name": "Alu Chop",
+          "description": "Crispy potato patties seasoned with traditional Nepali spices.",
+          "price": "Rs 140/-"
+        },
+        {
+          "name": "Fries",
+          "description": "Golden crispy French fries served hot and fresh.",
+          "price": "Rs 160/-"
+        },
+        {
+          "name": "Veg Pakoda",
+          "description": "Mixed vegetable fritters coated in seasoned gram flour.",
+          "price": "Rs 140/-"
+        },
+        {
+          "name": "ChauChau Sadeko",
+          "description": "Popular Nepali spicy noodle salad mixed with vegetables and spices.",
+          "price": "Rs 100/-"
+        },
+        {
+          "name": "Chatpate",
+          "description": "Tangy and spicy Nepali street-style snack packed with flavor.",
+          "price": "Rs 100/-"
+        }
+      ]
+    },
+    {
+      "name": "Non Veg Snacks",
+      "icon": "fas fa-drumstick-bite",
+      "items": [
+        {
+          "name": "Buff Sausage",
+          "description": "Grilled buffalo sausage seasoned and served hot.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Chicken Sausage",
+          "description": "Juicy chicken sausage grilled to perfection.",
+          "price": "Rs 150/-"
+        },
+        {
+          "name": "Chicken Pakoda",
+          "description": "Crispy chicken fritters marinated with flavorful spices.",
+          "price": "Rs 150/-"
+        }
+      ]
+    },
+    {
+      "name": "Cigarettes",
+      "icon": "fas fa-smoking",
+      "items": [
+        {
+          "name": "Shikhar Ice",
+          "description": "Menthol-flavored cigarette with a cool refreshing finish.",
+          "price": "Rs 25/-"
+        },
+        {
+          "name": "Surya",
+          "description": "Classic Nepalese cigarette with a rich tobacco taste.",
+          "price": "Rs 30/-"
+        }
+      ]
+    },
+    {
+      "name": "Hukkah",
+      "icon": "fas fa-wind",
+      "items": [
+        {
+          "name": "Hukkah Normal",
+          "description": "Classic flavored hukkah experience with smooth smoke.",
+          "price": "Rs 299/-"
+        },
+        {
+          "name": "Hukkah Cloud",
+          "description": "Enhanced hukkah with thicker clouds and richer flavor.",
+          "price": "Rs 350/-"
+        },
+        {
+          "name": "Hukkah Premium Normal",
+          "description": "Premium flavor blend offering a smooth and satisfying session.",
+          "price": "Rs 350/-"
+        },
+        {
+          "name": "Hukkah Premium Cloud",
+          "description": "Premium hukkah with intense flavor and dense smoke clouds.",
+          "price": "Rs 399/-"
+        }
+      ]
+    }
+  ]
+}

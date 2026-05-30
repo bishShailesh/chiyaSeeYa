@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChiyaSeeYa Menu - Explore our selection of premium teas, coffees, and snacks">
+    <meta name="keywords" content="tea, coffee, chiya, menu, nepali tea, cafe">
+    <title>Menu - ChiyaSeeYa</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-mug-hot me-2"></i>ChiyaSeeYa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <div class="menu-hero">
+        <div class="container">
+            <h1><i class="fas fa-utensils me-2"></i>Our Menu</h1>
+            <p>Experience the perfect blend of handcrafted teas, refreshing drinks, authentic Nepali favorites, and freshly prepared snacks.</p>
+        </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="category-filter">
+        <div class="filter-container">
+            <p class="filter-title"><i class="fas fa-filter me-2"></i>Filter by Category</p>
+            <div class="filter-buttons" id="filter-buttons">
+                <button class="filter-btn active" data-category="all" onclick="filterMenu('all')">
+                    <i class="fas fa-th me-1"></i> All
+                </button>
+                <!-- Category buttons will be added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <div class="menu-content">
+        <div class="container">
+            <div id="menu-container" class="menu-container loading">
+                <!-- Menu items will be loaded here from menu.json -->
+                <div class="text-center py-5">
+                    <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem;">
+                        <span class="visually-hidden">Loading menu...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading our delicious offerings...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5><i class="fas fa-mug-hot me-2"></i>ChiyaSeeYa</h5>
+                    <p>Food, Drinks, Vibes and Memories</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/1076802865514856?ref=PROFILE_EDIT_xav_ig_profile_page_web" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/chiya_see_ya/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40chiya.see.ya%3F_r%3D1%26_t%3DZS-95O5P87CxcY%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnBMGurjGHS4oy5YYfuVDIB4Jsj0eW82iSqGz3gt-IWJ6hb2VzOmMSemLPQZc_aem_LvpOi6eOKPnk_zAB4Gr12w&e=AUBZY9ZE3XNhpiwPI810RxzqsmGgs-WOL_V0ZIl1YI9qJ-9a9wc5wGAw6T1yI0G7cqVV-iJ5bxF9tScMts2_dbnZqTpNPQaVPD4UndhijQRrtrkj7LoLAhLAq9qhKXfKo0xacdASYu8S" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/9779801918875" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Contact Info</h5>
+                    <p>Setopul, Kathmandu 44600<br>Nepal</p>
+                    <p><a href="tel:+9779801918875">+977 980-1918875</a></p>
+                    <p><a href="mailto:chiyaseeya1@gmail.com">chiyaseeya1@gmail.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 ChiyaSeeYa. All rights reserved. | Go Green, Stay Healthy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
