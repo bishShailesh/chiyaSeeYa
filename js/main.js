@@ -101,6 +101,50 @@ function filterMenu(category) {
     
     // Re-render menu with filter
     renderMenu(menuData, category);
+    
+    // Auto-scroll to the selected category heading
+    setTimeout(() => {
+        // Calculate total offset for navbar + sticky filter bar
+        const navbar = document.querySelector('.navbar');
+        const filterBar = document.querySelector('.category-filter');
+        const navbarHeight = navbar ? navbar.offsetHeight : 70;
+        const filterBarHeight = filterBar ? filterBar.offsetHeight : 0;
+        const totalOffset = navbarHeight + filterBarHeight + 20; // Extra 20px for spacing
+        
+        let targetElement = null;
+        
+        if (category === 'all') {
+            // For "All", scroll to the first category heading
+            const firstCategory = document.querySelector('.menu-category');
+            if (firstCategory) {
+                targetElement = firstCategory.querySelector('.category-header');
+            }
+        } else {
+            // For specific category, scroll to that category's heading
+            const categorySection = document.querySelector(`.menu-category[data-category="${category}"]`);
+            if (categorySection) {
+                targetElement = categorySection.querySelector('.category-header');
+            }
+        }
+        
+        // Fallback to menu container if no specific element found
+        if (!targetElement) {
+            const menuContainer = document.getElementById('menu-container');
+            if (menuContainer) {
+                targetElement = menuContainer;
+            }
+        }
+        
+        if (targetElement) {
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - totalOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }, 150); // Slightly longer delay to ensure DOM is fully updated
 }
 
 // Render menu items
